@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:imageEditor="clr-namespace:Syncfusion.Maui.ImageEditor;assembly=Syncfusion.Maui.ImageEditor"
+             x:Class="AddShapes_Polygon_PolyLine.MainPage">
+
+    <Grid RowDefinitions="0.9*, 0.1*" 
+          HorizontalOptions="Center" 
+          VerticalOptions="Center" >
+        <imageEditor:SfImageEditor x:Name="imageEditor"/>
+        <Grid Grid.Row="1" 
+              ColumnDefinitions="0.5*, 0.5*" >
+            <Button Text="Polygon" 
+                    Clicked="OnPolygonClicked" />
+            <Button Grid.Column="1"
+                    Text="Polyline"
+                    Clicked="OnPolylineClicked" />
+        </Grid>
+    </Grid>
+</ContentPage>
